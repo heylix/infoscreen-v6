@@ -9,7 +9,7 @@ git_project = "tuwat"
 event_name = "git_issues_labeled_defects"
 
 ## the endpoint we'll be hitting
-uri = "https://git.raumzeitlabor.org/api/v4/projects/#{git_owner}%2F#{git_project}
+uri = "https://git.raumzeitlabor.org/api/v4/projects/#{git_owner}%2F#{git_project}"
 
 SCHEDULER.every '2m', :first_in => 0 do |job|
     puts "Getting #{uri}"
